@@ -16,3 +16,6 @@ Very often, on MS SKL servers in 1C databases, log files grow to unimaginable si
 ![shrn_sql](/images/shrn_sql.jpg)
 
 ### Hyper-V Create VM
+This script was written during the upgrade from Windows server 2012 to 2019. The problem was that it was impossible to connect to the new version of Hyper-V from the old one. Since the updates were delayed and there is a need to create a new VM, a solution was needed that allows you to do this conveniently without a GUI.
+
+![hv_create_vm](/images/hv_create_vm.jpg)
