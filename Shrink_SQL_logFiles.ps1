@@ -19,14 +19,10 @@ if (!$SqlServer_module_version) {
     
     # Set variables
     $hostname = hostname;`
-    $ins = "$hostname";`
+    $ins = "$hostname";` # Add \SQLEXPRESS if you have EXPRESS redaction of SQL server
     Write-Host "Input Username and Passwort to login on your SQL Server: " -ForegroundColor Yellow;`
     $cred = Get-Credential;`
     $params = @{Credential=$cred; ServerInstance=$ins};`
-    # FOR TEST
-    #$Username = 'sa'
-    #$Password = 'Mrt5hkmrt5hk'
-    #$params1 = @{username=$Username; password=$Password; ServerInstance=$ins};`
 
     # Set queries
     $db_list_quer = "SELECT name, database_id, recovery_model_desc AS [Recovery Model]
